@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 import Header from './components/HeaderComponent';
 import Footer from './components/FooterComponent';
-import './App.css';
+import ServicesList from "./components/ServicesComponent";
+// import Main from "./components/MainComponent";
+// import { BrowserRouter } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Medspa Site</h1>
+      <ServicesList />
       <Footer />
     </div>
   );

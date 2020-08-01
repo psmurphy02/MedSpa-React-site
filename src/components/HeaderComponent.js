@@ -33,6 +33,9 @@ export default class Header extends Component {
             <Collapse isOpen={this.state.isNavOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
+                        <NavLink href="/">home</NavLink>
+                    </NavItem>
+                    <NavItem>
                         <NavLink href="/ServicesComponent">services</NavLink>
                     </NavItem>
                     <NavItem>
