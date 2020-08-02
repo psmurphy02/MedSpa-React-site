@@ -15,10 +15,10 @@ export default function Footer(props) {
                     </div>
                     <div className="col">
                         <h5>Follow Us</h5>
-                        <a className="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                        <a className="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a className="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a className="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram" /></a>{' '}
+                        <a className="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook" /></a>{' '}
+                        <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter" /></a>{' '}
+                        <a className="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube" /></a>{' '}
                     </div>
 
                 </div>
