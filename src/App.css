@@ -39,8 +39,35 @@
 
 
 .site-footer {
-  background-color: #466882;
+  /* background-color: #466882; */
+  background: #634b2c;
   color: white;
   padding-top: 40px;
   padding-bottom: 50px;
+}
+
+#pageImage {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.jumbotron {
+  background-image: url("./images/services_background\ copy.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  margin-top: -50px;
+}
+
+#title {
+  color: white;
+  /* position: absolute; */
+  /*transform: translate(200%, 200%); */
+  position: absolute;
+  top: 45%;
+  left: 45%;
 }

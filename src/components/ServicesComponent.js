@@ -26,6 +26,10 @@ function ServicesList(props) {
 
     return (
       <div className="container">
+        {/* <div className="row">
+            <img id="pageImage" src="/images/services_background.jpg" height="auto" width="100%" />
+          </div> */}
+          <hr />
         <div className="row">{serviceList}</div>
       </div>
     );

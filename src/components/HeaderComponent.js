@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, Collapse } from "reactstrap";
+import Title from "./TitleComponent";
+import { Jumbotron, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, Collapse } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
 export default class Header extends Component {
@@ -21,6 +22,8 @@ export default class Header extends Component {
   render() {
     return (
       <>
+      <Jumbotron fluid img id="pageImage" src="/images/services_background.jpg" height="auto" width="100%" >
+
         <Navbar color="faded" light expand="md">
             <NavbarBrand href="/">
               <img
@@ -34,23 +37,27 @@ export default class Header extends Component {
             <Collapse isOpen={this.state.isNavOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                        <NavLink className="nav-link" to="/home">home</NavLink>
+                        <NavLink className="nav-link text-white" to="/home">home</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/services">services</NavLink>
+                        <NavLink className="nav-link text-white" to="/services">services</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/products">products</NavLink>
+                        <NavLink className="nav-link text-white" to="/products">products</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/about">about</NavLink>
+                        <NavLink className="nav-link text-white" to="/about">about</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="nav-link" to="/contact">contact</NavLink>
+                        <NavLink className="nav-link text-white" to="/contact">contact</NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>
         </Navbar>
+                    <span id="title">
+                      <Title />
+                    </span>
+        </Jumbotron>
       </>
     );
   }
