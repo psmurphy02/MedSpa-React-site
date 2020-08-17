@@ -1,12 +1,14 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 
-export default function Footer(props) {
+export default function Footer() {
     return(
         <footer className="site-footer">
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <button type="button" class="btn btn-lg btn-danger">Contact Us Today</button>
+                        {/* <button type="button" class="btn btn-lg btn-danger">Contact Us Today</button> */}
+                        <ContactForm />
                     </div>
                     <div className="col">
                         <h5>1855 Plumas Street Suite 2</h5>
