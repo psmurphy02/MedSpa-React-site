@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import Home from "./HomeComponent";
-import Header from "./HeaderComponent";
-import Footer from "./FooterComponent";
-import ServicesList from "./ServicesComponent";
-import ProductsList from "./ProductsComponent";
-import About from "./AboutComponent";
+import PageTemplate from "./PageComponent";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { SERVICES } from "../data/services";
 import { PRODUCTS } from "../data/products";
@@ -22,23 +18,15 @@ class Main extends Component {
 
   render() {
 
-      const HomePage = () => {
-          return (
-              <Home />
-          );
-      }
-
     return (
       <div className="App">
-        <Header />
         <Switch>
-            <Route exact path='/home' component={HomePage} />
-            <Route exact path='/services' render={() => <ServicesList services={this.state.services} />} />
-            <Route exact path='/products' render={() => <ProductsList products={this.state.products} />} />
-            <Route exact path='/about' render={() => <About staffList={this.state.staffList} />} />
+            <Route exact path='/home' component={Home} />
+            <Route exact path='/services' render={() => <PageTemplate data={this.state.services} />} />
+            <Route exact path='/products' render={() => <PageTemplate data={this.state.products} />} />
+            <Route exact path='/about' render={() => <PageTemplate data={this.state.staffList} />} />
             <Redirect to='/home' />
         </Switch>
-        <Footer />
       </div>
     );
   }

@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import Title from "./TitleComponent";
-import { Jumbotron, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, Collapse } from "reactstrap";
+import { Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, Collapse } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import homeImage from "../images/homepage.jpg";
-// import Image from "./ImageComponent";
-
 
 export default class Header extends Component {
   constructor(props) {
@@ -13,15 +9,8 @@ export default class Header extends Component {
     this.toggleNav = this.toggleNav.bind(this);
     this.state = {
       isNavOpen: false,
-      // headerImage: {require('../images/homepage.jpg')}
     };
   }
-
-  changeImage() {
-    this.setState({
-      headerImage: this.state.headerImage,
-    })
- }
 
   toggleNav() {
     this.setState({
@@ -30,12 +19,9 @@ export default class Header extends Component {
   }
 
   render() {
-    // let headerImage = require('../images/homepage.jpg')
     return (
       <>
-      {/* <Jumbotron fluid img id="pageImage" height="auto" width="100%" > */}
-      <Jumbotron style={{ backgroundImage: `url(${homeImage})`}}>
-        <Navbar color="faded" light expand="md">
+        <Navbar stick="top" color="faded" light expand="md">
             <NavbarBrand href="/">
               <img
                 src="/images/pmmd_logo.png"
@@ -65,10 +51,6 @@ export default class Header extends Component {
                 </Nav>
             </Collapse>
         </Navbar>
-                    <span id="title">
-                      <Title />
-                    </span>
-        </Jumbotron>
       </>
     );
   }

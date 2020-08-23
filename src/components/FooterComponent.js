@@ -7,7 +7,6 @@ export default function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        {/* <button type="button" class="btn btn-lg btn-danger">Contact Us Today</button> */}
                         <ContactForm />
                     </div>
                     <div className="col">

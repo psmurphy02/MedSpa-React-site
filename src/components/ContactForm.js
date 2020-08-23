@@ -25,15 +25,12 @@ export default class ContactForm extends Component {
                 <ModalBody>
                     <Form>
                         <FormGroup row>
-                            {/* <Label for="scheduleName">Name</Label> */}
                             <Input type="name" name="name" id="scheduleName" placeholder="Your Name" />
                         </FormGroup>
                         <FormGroup row>
-                            {/* <Label for="loginEmail">Email address</Label> */}
                             <Input type="email" name="email" id="scheduleEmail" placeholder="Email" />
                         </FormGroup>
                         <FormGroup row>
-                            {/* <Label for="loginPhone">Phone number</Label> */}
                             <Input type="tel" name="phone" id="schedulePhone" placeholder="Phone Number" />
                         </FormGroup>
                         <FormGroup row>
